@@ -92,7 +92,7 @@ function Competences() {
     ]
 
     return (
-        <section>
+        <section id="competences">
             <h3>Mes compétences</h3>
             <section className="skillbox tech">
                 <h4>Compétences techniques</h4>

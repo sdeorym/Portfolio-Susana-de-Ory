@@ -1,4 +1,5 @@
 import './Contact.css'
+import Button from "../../DRY/Button.jsx"
 
 function Contact() {
     /*
@@ -22,7 +23,7 @@ function Contact() {
                 <label >Message</label>
                 <textarea className="messagebox" placeholder="Votre message ici" required />
             </div>
-            <button>Envoyer</button>
+            <Button className="sendMail" type="button" value="send-contact" title="Send message" text="Envoyer" />
         </form>
       
     </section>

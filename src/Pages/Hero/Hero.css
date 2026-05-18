@@ -1,9 +1,25 @@
+#hero {
+    position: relative;
+}
+
 .heroPhoto {
     width: 100%;
     display: block;
-    position: absolute;
 }
 
-h1, h2 {
-    z-index: 10;
+.heroContent {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    z-index: 10;    
+}
+.tophead {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap:0;
 }

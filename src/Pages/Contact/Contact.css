@@ -2,6 +2,9 @@
     background-color: #1D435C;
     color: #FFF;
 }
+form {
+    margin: 50px;
+}
 
 .contactitle {
     color: #FFF;
@@ -30,7 +33,7 @@ input, textarea {
     font-family: 'Nunito';
 }
 
-button {
+.sendMail {
     background-color: #935E23;
     color: #FFF;
     font-weight: 700;

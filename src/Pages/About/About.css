@@ -1,0 +1,9 @@
+#about{
+    margin: 30px 50px;
+}
+.allAbout {
+    display: flex;
+    flex-direction: column;
+    padding: 10px auto;
+    gap: 25px;
+}

@@ -1,8 +1,8 @@
-function Button() {
+function Button({className, text, title, value, type}) {
 
 return (
     <>
-        Ola ke ase
+        <button className={className} type={type} value={value} title={title}>{text}</button>
     </>
 )
 
