@@ -1,0 +1,9 @@
+.heroPhoto {
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+
+h1, h2 {
+    z-index: 10;
+}

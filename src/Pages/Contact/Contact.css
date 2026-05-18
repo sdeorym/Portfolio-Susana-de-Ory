@@ -1,0 +1,41 @@
+.contactform {
+    background-color: #1D435C;
+    color: #FFF;
+}
+
+.contactitle {
+    color: #FFF;
+}
+
+.textbox {
+    display:flex;
+    flex-direction: column;
+    margin: 5%;  
+    font-family: 'Nunito';
+    text-align: left;
+    gap: 5px;
+}
+input, textarea {
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #1D435C;
+    font-weight: 400;
+    height: 25px;
+    vertical-align: top;
+    padding: 1%;
+}
+
+.messagebox {
+    height: 250px;
+    font-family: 'Nunito';
+}
+
+button {
+    background-color: #935E23;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 12.5px 20px;
+    margin-top: 5%;
+}
