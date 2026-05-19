@@ -1,5 +1,9 @@
 #competences {
-    margin: 30px 50px;
+    padding: 30px 50px;
+    scroll-margin-top: 80px;
+}
+#competences h3 {
+    color: var(--blue-focus);
 }
 .skillbox {
     margin: 5%;

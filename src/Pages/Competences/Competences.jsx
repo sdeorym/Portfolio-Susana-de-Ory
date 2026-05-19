@@ -94,6 +94,7 @@ function Competences() {
     return (
         <section id="competences">
             <h3>Mes compétences</h3>
+            OLA KE ASE, EXTERNALIZA LOS COMPONENTES CON LAS CARTAS O KE ASE
             <section className="skillbox tech">
                 <h4>Compétences techniques</h4>
                 {hardSkills.map((h) =>

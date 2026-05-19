@@ -8,8 +8,8 @@ function Contact() {
         htmlFor="message" type="text"name="message" rows="15" onBlur={handleChange} 
     */
   return (
-    <section className="contactform">
-        <h3 className="contactitle">Contact</h3>
+    <section className="contactform" id="contact">
+        <h3>Contact</h3>
         <form>
             <div className="textbox">
                 <label>Nom</label>

@@ -9,28 +9,28 @@ const menuCards = [
     {
         "id" : "0",
         "title": "Accueil",
-        "link" : "Hero"
+        "link" : "#hero"
     }, 
     {
         "id" : "1",
         "title": "Projets",
-        "link" : "Projects"
+        "link" : "#projects"
     }, 
     {
         "id" : "2",
         "title": "Compétences",
-        "link" : "Competences"
+        "link" : "#competences"
     },
     {
         "id" : "3",
         "title": "Contact",
-        "link" : "Contact"
+        "link" : "#contact"
     }
 ]
 
 return (
     <>
-        <Menu menuOptions = {menuCards} />
+        <Menu menuOptions = {menuCards} className="footerMenu" />
         <div className="closure">
             © 2026 Susana de Ory<br />
             <small>Icônes par icons8. Image hero par Daniil Komov.</small>

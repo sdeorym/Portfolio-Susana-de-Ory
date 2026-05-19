@@ -1,25 +1,31 @@
 #hero {
     position: relative;
 }
-
 .heroPhoto {
     width: 100%;
     display: block;
 }
-
 .heroContent {
     position: absolute;
     inset: 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 10px;
+    padding: 15px;
     z-index: 10;    
 }
 .tophead {
-    color: #FFF;
+    color: var(--w-text);
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    gap:0;
+    gap:0.1rem;
+}
+.tophead h1 {
+    font-size: 1.6rem;
+    line-height: 1.05;
+}
+.tophead h2 {
+    font-size: 1.1rem;
+    line-height: 1.2;
 }

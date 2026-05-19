@@ -12,7 +12,7 @@ function Hero() {
                     <h1>Susana de Ory</h1>
                     <h2>Portfolio Développeuse Front End</h2>
                 </div>
-                <img className="heroIcon" src={menu} alt="Web menu"></img>
+                <img className="heroIcon" type="button" src={menu} alt="Web menu"></img>
             </div>
             
         </section>

@@ -8,9 +8,11 @@ function CardS({projects}) {
                 {projects.map((p) =>
                 <div className="smallCard" key={p.id}>
                     <img src={p.image} alt={p.alt}></img>
-                    <h4>{p.title}</h4>
-                    <p>{p.brief}</p>
-                    <p><b>Technologies:</b> {p.stack}</p>
+                    <div className="cardData">
+                        <h4>{p.title}</h4>
+                        <p>{p.brief}</p>
+                        <p><b>Technologies:</b> {p.stack}</p>
+                    </div>
                     <Button className="buttonCard" type="button" value="modal-opener" title="Voir plus" text="Voir plus" />
                 </div>)}
             </section>

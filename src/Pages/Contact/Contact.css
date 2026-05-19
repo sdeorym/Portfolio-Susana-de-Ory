@@ -1,15 +1,20 @@
+#contact {
+    scroll-margin-top: 80px;
+    padding: 30px;
+}
+#contact h3 {
+    color: var(--w-text);
+}
 .contactform {
-    background-color: #1D435C;
+    background-color: var(--blue-focus);
     color: #FFF;
 }
 form {
     margin: 50px;
 }
-
 .contactitle {
     color: #FFF;
 }
-
 .textbox {
     display:flex;
     flex-direction: column;
@@ -21,24 +26,23 @@ form {
 input, textarea {
     border-radius: 5px;
     background-color: #FFF;
-    color: #1D435C;
+    color: var(--blue-focus);
     font-weight: 400;
     height: 25px;
     vertical-align: top;
     padding: 1%;
 }
-
 .messagebox {
     height: 250px;
-    font-family: 'Nunito';
+    font-family: var(--nunito);
 }
 
 .sendMail {
-    background-color: #935E23;
+    background-color: var(--brown-focus);
     color: #FFF;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 10px;
     padding: 12.5px 20px;
-    margin-top: 5%;
+    margin: 5% 0 0 0;
 }

@@ -1,20 +1,18 @@
 import Button from "./Button.jsx";
 
-function Menu({menuOptions}) {
+function Menu({menuOptions, className}) {
 
 return (
     <>
-        <nav>
-            <ul>
-                {menuOptions.map((s) =>
-                <ul key={s.id}>
-                    <li>
-                        title = {s.title}
-                        link = {s.link}
-                    </li>
-                </ul>
-            )}
+        <nav>            
+            {menuOptions.map((s) =>
+            <ul key={s.id} className={className}>
+                <li>
+                    <a href={s.link}>{s.title}</a>
+                    
+                </li>
             </ul>
+        )}            
         </nav>
     </>
 )

@@ -1,7 +1,3 @@
-/*nav ul {
-
-}*/
-
 .closure {
     padding: 12.5%;
     font-size: 13.5px;
@@ -16,4 +12,13 @@
 }
 .links img {
     width: 25px;
+}
+.footerMenu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+    
 }

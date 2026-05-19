@@ -1,9 +1,19 @@
 #about{
-    margin: 30px 50px;
+    scroll-margin-top: 80px;
+    margin: 75px 50px;    
+}
+#about h3 {
+    color: var(--blue-focus);
+    font-size: 1.25rem; /* ≈ 17.5px */
+    line-height: 1.3;
 }
 .allAbout {
     display: flex;
     flex-direction: column;
-    padding: 10px auto;
+    margin: 25px auto;
     gap: 25px;
+}
+.allAbout img {
+    width: 75%;
+    margin: 0 auto;
 }

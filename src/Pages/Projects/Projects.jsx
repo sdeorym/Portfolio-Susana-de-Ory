@@ -114,8 +114,10 @@ function Projects() {
     return (
         <section id="projects">
             <h3>Mes projets</h3>
-            <Select stacks = {stacks} />
-            <CardS projects = {projects}/>
+            <div className="projectBoxes">
+                <Select stacks = {stacks} />
+                <CardS projects = {projects}/>
+            </div>
         </section>
     )
 }
