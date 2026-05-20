@@ -1,4 +1,5 @@
 import './Competences.css'
+import Skills from "../../DRY/Skills.jsx"
 import html from "../../assets/images/icons/html.png"
 import css from "../../assets/images/icons/css.png"
 import sass from "../../assets/images/icons/sass.png"
@@ -16,37 +17,37 @@ function Competences() {
 
     const hardSkills= [
         {
-            "id": "0",
+            "id": 0,
             "src": html,
             "alt": "Icône HTML5",
             "title": "HTML5"
         },
         {
-            "id": "1",
+            "id": 1,
             "src": css,
             "alt": "Icône CSS3",
             "title": "CSS3"
         },
         {
-            "id": "2",
+            "id": 2,
             "src": sass,
             "alt": "Icône Sass",
             "title": "Sass"
         },
         {
-            "id": "3",
+            "id": 3,
             "src": js,
             "alt": "Icône JavaScript",
             "title": "JavaScript"
         },
         {
-            "id": "4",
+            "id": 4,
             "src": react,
             "alt": "Icône React",
             "title": "React"
         },
         {
-            "id": "5",
+            "id": 5,
             "src": redux,
             "alt": "Icône Redux",
             "title": "Redux"
@@ -54,63 +55,66 @@ function Competences() {
     ]
     const softSkills= [
         {
-            "id": "0",
+            "id": 0,
             "src": analytique,
             "alt": "Icône Analytiqye",
             "title": "Analytique"
         },
         {
-            "id": "1",
+            "id": 1,
             "src": creativite,
             "alt": "Icône créativité",
             "title": "Créativité"
         },
         {
-            "id": "2",
+            "id": 2,
             "src": detail,
             "alt": "Icône Attention au détail",
             "title": "Attention au détail"
         },
         {
-            "id": "3",
+            "id": 3,
             "src": equipe,
             "alt": "Icône Esprit d'équipe",
             "title": "Esprit d'équipe"
         },
         {
-            "id": "4",
+            "id": 4,
             "src": resultats,
             "alt": "Icône Orientée vers les résultats",
             "title": "Orientée vers les résultats"
         },
         {
-            "id": "5",
+            "id": 5,
             "src": perseverance,
             "alt": "Icône Persévérance",
             "title": "Persévérance"
         },
     ]
+    const skillsBox=[
+        {
+            "id": 0,
+            "title": "Compétences techniques",
+            "className": "tech",
+            "array": hardSkills
+        },
+        {
+            "id": 1,
+            "title": "Soft skills",
+            "className": "softie",
+            "array": softSkills
+        }
+    ]
 
     return (
         <section id="competences">
             <h3>Mes compétences</h3>
-            OLA KE ASE, EXTERNALIZA LOS COMPONENTES CON LAS CARTAS O KE ASE
-            <section className="skillbox tech">
-                <h4>Compétences techniques</h4>
-                {hardSkills.map((h) =>
-                    <div className="skill-list" key={h.id}>
-                        <div className="iconList"><div><img src={h.src} alt={h.alt}></img></div><small>{h.title}</small></div>
-                    </div>        
-                )}                
-            </section>
-            <section className="skillbox softie">
-                <h4>Soft skills</h4>
-                {softSkills.map((s) =>
-                    <div className="skill-list" key={s.id}>
-                        <div className="iconList"><div><img src={s.src} alt={s.alt}></img></div><small>{s.title}</small></div>
-                    </div>
-                )} 
-            </section>
+            {skillsBox.map((s) =>
+                <section className={`skillbox ${s.className}`} key={s.id}>
+                    <Skills title={s.title} array={s.array} />
+                </section>
+            )}
+
         </section>
     )
 }

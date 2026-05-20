@@ -5,6 +5,9 @@ div {
 #history {
     padding: 30px 50px;
 }
+#history h3 {
+    color: var(--blue-focus);
+}
 #history h4 {
     text-decoration: underline;
     color: #935E23;
