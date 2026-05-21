@@ -4,12 +4,11 @@ function Menu({menuOptions, className}) {
 
 return (
     <>
-        <nav>            
+        <nav className={className}>            
             {menuOptions.map((s) =>
             <ul key={s.id} className={className}>
                 <li>
-                    <a href={s.link}>{s.title}</a>
-                    
+                    <Button><a href={s.link}>{s.title}</a></Button>                    
                 </li>
             </ul>
         )}            

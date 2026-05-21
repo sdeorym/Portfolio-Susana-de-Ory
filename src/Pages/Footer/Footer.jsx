@@ -1,4 +1,5 @@
 import './Footer.css'
+import Button from "../../DRY/Button.jsx";
 import Menu from "../../DRY/Menu.jsx";
 import linkedin from "../../assets/images/icons/linkedin.png"
 import github from "../../assets/images/icons/github.png"
@@ -35,8 +36,8 @@ return (
             © 2026 Susana de Ory<br />
             <small>Icônes par icons8. Image hero par Daniil Komov.</small>
             <div className="links">
-                <a href="https://www.linkedin.com/in/sdeorym/?locale=fr-FR"><img src={linkedin} alt="Icône Linkedin"></img></a>
-                <a href="https://github.com/sdeorym"><img src={github} alt="Icône Github"></img></a>
+                <Button><a href="https://www.linkedin.com/in/sdeorym/?locale=fr-FR"><img src={linkedin} alt="Icône Linkedin"></img></a></Button>
+                <Button><a href="https://github.com/sdeorym"><img src={github} alt="Icône Github"></img></a></Button>
             </div>
         </div>
     </>

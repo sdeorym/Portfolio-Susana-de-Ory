@@ -1,3 +1,5 @@
+import Button from "./Button.jsx"
+
 function Skills({title, array})  {
     return(
         <> 
@@ -5,7 +7,7 @@ function Skills({title, array})  {
             <div className="iconList">
                 {array.map((item) =>
                     <div className="iconId" key={item.id}>
-                        <img src={item.src} alt={item.alt}></img>
+                        <Button>{<img src={item.src} alt={item.alt}></img>}</Button>                        
                         <small>{item.title}</small>
                     </div>)}
             </div>

@@ -13,12 +13,20 @@
 .links img {
     width: 25px;
 }
+.footerMenu button, .links button  {
+    border: none;
+    background-color: var(--bg);
+    color: var(--blue-focus);
+}
 .footerMenu {
     display: grid;
     grid-auto-flow: column;
     gap: 20px;
     list-style: none;
     padding: 0;
-    margin: 5px;
-    
+    margin: 5px;    
+}
+.footerMenu button a {
+    text-decoration: none;
+    color: inherit;
 }

@@ -1,5 +1,6 @@
 #hero {
     position: relative;
+    scroll-margin-top: -80px;
 }
 .heroPhoto {
     width: 100%;
@@ -28,4 +29,8 @@
 .tophead h2 {
     font-size: 1.1rem;
     line-height: 1.2;
+}
+.buttonGhost {
+    background: transparent;
+    border: none;
 }

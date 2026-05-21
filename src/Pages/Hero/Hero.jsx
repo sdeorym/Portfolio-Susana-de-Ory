@@ -1,4 +1,5 @@
 import "./Hero.css"
+import Button from "../../DRY/Button.jsx"
 import menu from "../../assets/images/icons/whitemenu_icon_S.png"
 import hero from "../../assets/images/photos/hero_mobile.jpg"
 
@@ -12,7 +13,7 @@ function Hero() {
                     <h1>Susana de Ory</h1>
                     <h2>Portfolio Développeuse Front End</h2>
                 </div>
-                <img className="heroIcon" type="button" src={menu} alt="Web menu"></img>
+                <Button className="buttonGhost"><img className="heroIcon" type="button" src={menu} alt="Web menu"></img></Button>
             </div>
             
         </section>
