@@ -1,6 +1,5 @@
 function Select({stacks}) {
 const stacksArray = ["Tous", ...stacks];
-console.log(stacks);
     return (
         <div className="selector">
             <label htmlFor="stack">Choisissez les technologies :</label>

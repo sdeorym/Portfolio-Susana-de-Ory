@@ -1,8 +1,8 @@
-function Button({className, text, title, value, type, children}) {
+function Button({className, text, title, value, type, children, onClick}) {
 
 return (
     <>
-        <button className={className} type={type} value={value} title={title}>{children || text}</button>
+        <button className={className} onClick={onClick} type={type} value={value} title={title}>{children || text}</button>
     </>
 )
 
