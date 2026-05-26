@@ -115,7 +115,7 @@ function Projects() {
         <section id="projects">
             <h3>Mes projets</h3>
             <div className="projectBoxes">
-                <Select stacks = {stacks} />
+                <Select stacks = {Array.from(stacks)} />
                 <CardS projects = {projects}/>
             </div>
         </section>

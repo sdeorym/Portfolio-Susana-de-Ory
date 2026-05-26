@@ -31,14 +31,15 @@ const menuCards = [
 
 return (
     <>
-        <Menu menuOptions = {menuCards} className="footerMenu" />
         <div className="closure">
-            © 2026 Susana de Ory<br />
-            <small>Icônes par icons8. Image hero par Daniil Komov.</small>
+            <Menu menuOptions = {menuCards} className="footerMenu" />
             <div className="links">
                 <Button><a href="https://www.linkedin.com/in/sdeorym/?locale=fr-FR"><img src={linkedin} alt="Icône Linkedin"></img></a></Button>
                 <Button><a href="https://github.com/sdeorym"><img src={github} alt="Icône Github"></img></a></Button>
-            </div>
+            </div>            
+            © 2026 Susana de Ory<br />
+            <small>Icônes par icons8. Image hero par Daniil Komov.</small>
+
         </div>
     </>
 )

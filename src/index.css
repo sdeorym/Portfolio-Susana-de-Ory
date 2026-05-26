@@ -49,3 +49,8 @@ button:hover {
   transform: scale(1.10);
   font-weight: bold;
 }
+ul {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}

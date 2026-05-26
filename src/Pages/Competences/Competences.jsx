@@ -20,75 +20,87 @@ function Competences() {
             "id": 0,
             "src": html,
             "alt": "Icône HTML5",
-            "title": "HTML5"
+            "title": "HTML5",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
         },
         {
             "id": 1,
             "src": css,
             "alt": "Icône CSS3",
-            "title": "CSS3"
+            "title": "CSS3",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
         },
         {
             "id": 2,
             "src": sass,
             "alt": "Icône Sass",
-            "title": "Sass"
+            "title": "Sass",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
         },
         {
             "id": 3,
             "src": js,
             "alt": "Icône JavaScript",
-            "title": "JavaScript"
+            "title": "JavaScript",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
         },
         {
             "id": 4,
             "src": react,
             "alt": "Icône React",
-            "title": "React"
+            "title": "React",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
         },
         {
             "id": 5,
             "src": redux,
             "alt": "Icône Redux",
-            "title": "Redux"
-        },
+            "title": "Redux",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+        }
     ]
     const softSkills= [
         {
             "id": 0,
             "src": analytique,
             "alt": "Icône Analytiqye",
-            "title": "Analytique"
+            "title": "Analytique",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
         },
         {
             "id": 1,
             "src": creativite,
             "alt": "Icône créativité",
-            "title": "Créativité"
+            "title": "Créativité",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
         },
         {
             "id": 2,
             "src": detail,
             "alt": "Icône Attention au détail",
-            "title": "Attention au détail"
+            "title": "Attention au détail",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
         },
         {
             "id": 3,
             "src": equipe,
             "alt": "Icône Esprit d'équipe",
-            "title": "Esprit d'équipe"
+            "title": "Esprit d'équipe",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
         },
         {
             "id": 4,
             "src": resultats,
             "alt": "Icône Orientée vers les résultats",
-            "title": "Orientée vers les résultats"
+            "title": "Orientée vers les résultats",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
         },
         {
             "id": 5,
             "src": perseverance,
             "alt": "Icône Persévérance",
-            "title": "Persévérance"
+            "title": "Persévérance",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
         },
     ]
     const skillsBox=[

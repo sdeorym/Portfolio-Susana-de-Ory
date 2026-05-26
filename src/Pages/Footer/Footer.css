@@ -1,5 +1,5 @@
 .closure {
-    padding: 12.5%;
+    padding: 1% 12.5%;
     font-size: 13.5px;
     text-align: center;
 }
@@ -8,28 +8,24 @@
     flex-direction: row;
     justify-content: center;
     gap: 10%;
-    padding-top: 10px;
+    padding: 10px;
 }
 .links img {
     width: 25px;
 }
-.footerMenu button, .links button  {
+.footerMenu button, .links button {
     border: none;
     background-color: var(--bg);
     color: var(--blue-focus);
 }
-.footerMenu {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 20px;
+.footerMenu ul {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
     list-style: none;
     padding: 0;
     margin: 5px;    
 }
-.footerMenu li {
-    list-style: none;
-}
-
 .footerMenu button a {
     text-decoration: none;
     color: inherit;

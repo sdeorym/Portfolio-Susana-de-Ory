@@ -42,11 +42,11 @@ function Hero() {
     ]
     
     /* CAMBIA EL ESTADO DEL STATE CON UN USEEFFECT. */
+    /*function handleClick(close){
+        window.document.location.hash = close;
+        setOpen(false);
+    }*/
 
-
-/*OJO Para el menú tienes que cambiar el state a open cuando se le da al botón, y esto hace q se despliegue el menú en <Menu />;
-cuando se da otra vez hay que cerrarlo para que no se muestre */
-    console.log(open);
     return (
         <>
             <section id="hero">
@@ -57,7 +57,7 @@ cuando se da otra vez hay que cerrarlo para que no se muestre */
                         <h2>Portfolio Développeuse Front End</h2>
                     </div>
                     <Button className="buttonGhost" onClick={() => setOpen(!open)}><img className="heroIcon" type="button" src={menu} alt="Web menu"></img></Button>
-                    {open && <Menu menuOptions = {buttonry} className="headerMenu"/>}
+                    {open && <Menu menuOptions = {buttonry} className="headerMenu" closeMenu={() => setOpen(false)} />}
                 </div>
                 
             </section>

@@ -48,19 +48,16 @@
     color: var(--blue-focus);
     gap: 4px;
 }
-.headerMenu ul {
-    list-style: none;
-    padding: 5px;
-    margin: 0;
-}
 .headerMenu button {
     background: transparent;
     border: none;
     color: var(--blue-focus);
 }
+.headerMenu li:hover {
+    background-color: var(--blue-focus);   
+}
 .headerMenu button:hover {
-    background-color: var(--blue-focus);
-    color: var(--w-text);
+     color: var(--w-text);
 }
 .headerMenu a {
     color: inherit;
