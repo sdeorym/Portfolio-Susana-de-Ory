@@ -116,7 +116,7 @@ function Projects() {
             <h3>Mes projets</h3>
             <div className="projectBoxes">
                 <Select stacks = {Array.from(stacks)} />
-                <CardS projects = {projects}/>
+                <CardS projects = {projects} technologies="Technologies :" />
             </div>
         </section>
     )

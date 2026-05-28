@@ -122,11 +122,10 @@ function Competences() {
         <section id="competences">
             <h3>Mes compétences</h3>
             {skillsBox.map((s) =>
-                <section className={`skillbox ${s.className}`} key={s.id}>
-                    <Skills title={s.title} array={s.array} />
+                <section className={`skillbox ${s.className}`} key={s.id}>                                    
+                    <Skills title={s.title} array={s.array} />                                
                 </section>
             )}
-
         </section>
     )
 }

@@ -1,6 +1,6 @@
 import Button from "./Button.jsx"
 
-function CardS({projects}) {
+function CardS({projects, technologies}) {
 
     return(
         <>
@@ -11,7 +11,7 @@ function CardS({projects}) {
                     <div className="cardData">
                         <h4>{p.title}</h4>
                         <p>{p.brief}</p>
-                        <p><b>Technologies:</b> {p.stack}</p>
+                        <p><b>{technologies}</b> {p.stack}</p>
                     </div>
                     <Button className="buttonCard" type="button" value="modal-opener" title="Voir plus" text="Voir plus" />
                 </div>)}
