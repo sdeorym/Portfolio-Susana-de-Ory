@@ -31,7 +31,7 @@ const menuCards = [
 
 return (
     <>
-        <div className="closure">
+        <div className="closing">
             <Menu menuOptions = {menuCards} className="footerMenu" />
             <div className="links">
                 <Button><a href="https://www.linkedin.com/in/sdeorym/?locale=fr-FR"><img src={linkedin} alt="Icône Linkedin"></img></a></Button>
