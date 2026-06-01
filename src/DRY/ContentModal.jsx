@@ -1,7 +1,6 @@
 
-function ContentModal({content, classname}) {
+function ContentModal({content, classname, technologies}) {
 
-    console.log("OLA KE ASE, ABRE LA MODAL O KE ASE");
 
 return (
     <>
@@ -9,6 +8,8 @@ return (
             <h5>{content.title}</h5>
             <img src={content.src} alt={content.alt}></img>
             <p>{content.text}</p>
+            <p>{content.explanation}</p>
+            <p><br/><b>{technologies}</b> {content.stack}</p>
         </div>
     </>
 )

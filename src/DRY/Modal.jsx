@@ -12,7 +12,7 @@ return (
                     <div className="info">
                         <Button buttonType="button" onClick={onClose} className="closure">
                             <img src={closure} alt="Fermer la fenêtre"></img>
-                        </Button>
+                            </Button>
                         {content}
                     </div>
                 </div>

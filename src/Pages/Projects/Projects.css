@@ -30,7 +30,7 @@ select {
     padding: 0 10px;
     border-color: var(--blue-focus);
     border-radius: 10px;
-    background-color: var(--blue-shadow);
+    background-color: var(--bluey-shadow);
 }
 
 .projectCards {

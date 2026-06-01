@@ -4,12 +4,16 @@ import CardS from "../../DRY/CardS.jsx"
 import marseille from "../../assets/images/projects/marseille_mobile.jpg"
 import restau from "../../assets/images/projects/restaus_mobile.jpg"
 import skate from "../../assets/images/projects/skate_mobile.jpg"
+import { useState } from "react";
+
 
 function Projects() {
+    const [techno, setTechno] = useState("");
+
     const projects = [
         {
             "id": "0",
-            "image": marseille,
+            "src": marseille,
             "title": "Booki",
             "brief": "Développement d'une agence de voyages",
             "explanation": "Création de la page d'accueil de l'agence de voyages Booki ; l'information affichée est pour la destination Marseille",
@@ -19,7 +23,7 @@ function Projects() {
         },
         {
             "id": "1",
-            "image": restau,
+            "src": restau,
             "title": "Oh my food",
             "brief": "Développement d'un site pour réservation en restaurant",
             "explanation": "Création d'un site pour réserver une table et commander des plats en avance à l'arrivée au restaurant.<br>",
@@ -29,7 +33,7 @@ function Projects() {
         },
         {
             "id": "2",
-            "image": skate,
+            "src": skate,
             "title": "Print it!",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
@@ -39,7 +43,7 @@ function Projects() {
         },
         {
             "id": "3",
-            "image": marseille,
+            "src": marseille,
             "title": "Sophie Bluel Architecte d'interieur",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
@@ -49,7 +53,7 @@ function Projects() {
         },
         {           
             "id": "4",
-            "image": restau,
+            "src": restau,
             "title": "Mémoirs des cendres",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
@@ -59,7 +63,7 @@ function Projects() {
         },
         {
             "id": "5",
-            "image": skate,
+            "src": skate,
             "title": "Kasa",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
@@ -69,7 +73,7 @@ function Projects() {
         },
         {   
             "id": "6",
-            "image": marseille,
+            "src": marseille,
             "title": "Nina Carducci",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
@@ -79,7 +83,7 @@ function Projects() {
         },
         {            
             "id": "7",
-            "image": skate,
+            "src": skate,
             "title": "724 events",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
@@ -89,7 +93,7 @@ function Projects() {
         },
         {            
             "id": "8",
-            "image": marseille,
+            "src": marseille,
             "title": "ArgentBank",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
@@ -99,7 +103,7 @@ function Projects() {
         },
         {            
             "id": "9",
-            "image": restau,
+            "src": restau,
             "title": "LPG Consulting",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
@@ -109,14 +113,19 @@ function Projects() {
         }
     ]
 
+    const changeStack = (value) => {
+        setTechno(value);
+    };
+    const filteredProjects = ((techno != "Tous" && techno != "") ? (projects.filter(project => project.stack === techno)) : projects)
+
     const stacks = new Set(projects.map((project) => project.stack))
-    
+    console.log (techno);
     return (
         <section id="projects">
             <h3>Mes projets</h3>
             <div className="projectBoxes">
-                <Select stacks = {Array.from(stacks)} />
-                <CardS projects = {projects} technologies="Technologies :" />
+                <Select stacks = {Array.from(stacks)} onChange={(value) => (value ? changeStack(value) : changeStack(""))} />
+                <CardS projects = {filteredProjects} technologies="Technologies :" />
             </div>
         </section>
     )
