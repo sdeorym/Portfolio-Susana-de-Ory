@@ -3,7 +3,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Only POST allowed" });
   }
 
-  const { name, email, message } = req.body;
+  const { username, email, message } = req.body;
 
   try {
     const response = await fetch("https://api.resend.com/emails", {
@@ -15,7 +15,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         from: "Portfolio <onboarding@resend.dev>",
         to: ["sdeorym@gmail.com"],
-        subject: `Message from ${name}`,
+        subject: `Message from ${username}`,
         html: `
           <p><strong>Email:</strong> ${email}</p>
           <p>${message}</p>
