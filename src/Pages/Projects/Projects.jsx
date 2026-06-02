@@ -68,7 +68,7 @@ function Projects() {
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
             "stack": "HTML + CSS + React",
-            "web": "",
+            "web": "https://kasa-phi-six.vercel.app/",
             "alt": "Capture d'écran du site Kasa"
         },
         {   
@@ -88,7 +88,7 @@ function Projects() {
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
             "stack": "HTML + CSS + React",
-            "web": "",
+            "web": "https://724events-iota.vercel.app/",
             "alt": "Capture d'écran du site 724 events"
         },
         {            

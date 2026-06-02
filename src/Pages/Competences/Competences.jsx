@@ -9,9 +9,12 @@ import redux from "../../assets/images/icons/redux.png"
 import analytique from "../../assets/images/icons/analitique.png"
 import creativite from "../../assets/images/icons/creativite.png"
 import detail from "../../assets/images/icons/detail.png"
-import equipe from "../../assets/images/icons/equipe.png"
+import colab from "../../assets/images/icons/equipe.png"
 import resultats from "../../assets/images/icons/resultats.png"
 import perseverance from "../../assets/images/icons/perseverance.png"
+import adaptable from "../../assets/images/icons/adaptable.png"
+import communication from "../../assets/images/icons/communication.png"
+import autonome from "../../assets/images/icons/autonome.png"
 
 function Competences() {
 
@@ -21,42 +24,42 @@ function Competences() {
             "src": html,
             "alt": "Icône HTML5",
             "title": "HTML5",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+            "text": <ul><li>Booki</li><li>Oh my food</li><li>Print it!</li><li>Sophie Bluel Architecte d'interieur</li><li>Mémoirs des cendres</li><li>Kasa</li><li>Nina Carducci</li><li>724 events</li><li>ArgentBank</li><li>LPG Consulting</li></ul>
         },
         {
             "id": 1,
             "src": css,
             "alt": "Icône CSS3",
             "title": "CSS3",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+            "text": <ul><li>Booki</li><li>Oh my food</li><li>Print it!</li><li>Sophie Bluel Architecte d'interieur</li><li>Mémoirs des cendres</li><li>Kasa</li><li>Nina Carducci</li><li>724 events</li><li>ArgentBank</li><li>LPG Consulting</li></ul>
         },
         {
             "id": 2,
             "src": sass,
             "alt": "Icône Sass",
             "title": "Sass",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+            "text": <ul><li>Oh my food</li></ul>
         },
         {
             "id": 3,
             "src": js,
             "alt": "Icône JavaScript",
             "title": "JavaScript",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+            "text": <ul><li>Print it!</li><li>Sophie Bluel Architecte d'interieur</li><li>Mémoirs des cendres</li></ul>
         },
         {
             "id": 4,
             "src": react,
             "alt": "Icône React",
             "title": "React",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+            "text": <ul><li>Kasa</li><li>724 events</li><li>LPG Consulting</li></ul>
         },
         {
             "id": 5,
             "src": redux,
             "alt": "Icône Redux",
             "title": "Redux",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+            "text": <ul><li>ArgentBank</li></ul>
         }
     ]
     const softSkills= [
@@ -83,10 +86,10 @@ function Competences() {
         },
         {
             "id": 3,
-            "src": equipe,
-            "alt": "Icône Esprit d'équipe",
-            "title": "Esprit d'équipe",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+            "src": colab,
+            "alt": "Icône Collaboration interdisciplinaire",
+            "title": "Collaboration interdisciplinaire",
+            "text": "Collaboration avec des animateurs de la Grand École des Gobelins pour la création d'une bande dessinée intéractive (Mémoirs des cendres)."
         },
         {
             "id": 4,
@@ -102,6 +105,27 @@ function Competences() {
             "title": "Persévérance",
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
         },
+        {
+            "id": 6,
+            "src": adaptable,
+            "alt": "Icône adaptabilité",
+            "title": "Adaptabilité",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+        },
+        {
+            "id": 7,
+            "src": communication,
+            "alt": "Icône Communication",
+            "title": "Communication",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+        },
+        {
+            "id": 8,
+            "src": autonome,
+            "alt": "Icône Autonomie",
+            "title": "Autonomie",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+        }/**/
     ]
     const skillsBox=[
         {
