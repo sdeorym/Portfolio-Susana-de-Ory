@@ -13,7 +13,7 @@ function CardS({projects, technologies}) {
                 <div className="smallCard" key={p.id}>
                     <img src={p.src} alt={p.alt}></img>
                     <div className="cardData">
-                        <h4>{p.title}</h4>
+                        <h4 className="cardSTitle">{p.title}</h4>
                         <p>{p.brief}</p>
                         <p><b>{technologies}</b> {p.stack}</p>
                     </div>
@@ -23,7 +23,7 @@ function CardS({projects, technologies}) {
                     <Modal 
                         opened={(isSelected !== null)} 
                         onClose={() => setIsSelected(null)}
-                        content={isSelected && <ContentModal content={isSelected} technologies="Technologies :" classname="projectModal" />}>
+                        content={isSelected && <ContentModal content={isSelected} technologies="Technologies :" classname="projectModal" cardTitle="cardSTitle" />}>
                     </Modal>
                 )}
             </section>

@@ -60,12 +60,11 @@ function Contact() {
                 <textarea className="messagebox" type="message" name="message" rows="10" placeholder="Votre message ici" onBlur={handleChange} required />
             </div>
             <Button 
-                className="sendMail" 
                 type="submit" 
                 value="Send" 
                 title="Envoyer" 
                 text="Envoyer"
-                classname = {((formData.username!="") && (formData.email!="")) ? "submit enabled" : "submit disabled"} 
+                className = {((formData.username!="") && (formData.email!="")) ? "submit enabled" : "submit disabled"} 
                 disabled = {((formData.username=="") || (formData.email=="")) ? true : false}
                 data={formData}     
             />

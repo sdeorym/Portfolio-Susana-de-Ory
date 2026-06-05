@@ -13,6 +13,7 @@ form {
     display: flex;
     flex-direction: column;
     margin: 10%;
+    gap: 10px;
 }
 .contactitle {
     color: #FFF;
@@ -43,18 +44,25 @@ input::placeholder, textarea::placeholder {
 .submit {
     font-weight: 700;
     font-size: 1rem;
-    border-radius: 10px;
-    padding: 12.5px 20px;
-    margin: 5% 0 0 0;
-    margin: 10%;
+    border-radius: 20px;
+    padding: 12.5px;
+    width: 60%;
+    margin: 10% auto;
 }
 .enabled {
     background-color: var(--brown-focus);
-    color: #FFF;
+    color: #FFF;    
 }
 .disabled {
-    background-color: var(--bluey-shadow);
-    color: #FFF;
-    opacity: 0.5;
+    background-color: var(--bg);
+    color: #666666;
+    opacity: 0.75;
     cursor: not-allowed;
+}
+@media all and (min-width: 769px) {
+  form {
+    margin: 5% 25%;
+  }
+  .submit {
+    width: 30%;}
 }

@@ -1,13 +1,14 @@
 import "./Hero.css"
 import Button from "../../DRY/Button.jsx"
 import Menu from "../../DRY/Menu.jsx"
-import menu from "../../assets/images/icons/whitemenu_icon_S.png"
-import hero from "../../assets/images/photos/hero_mobile.jpg"
+import menu from "../../assets/images/icons/whitemenu.svg"
+import heroS from "../../assets/images/photos/hero_mobile.avif"
+import heroM from "../../assets/images/photos/hero_tablet.avif"
+import heroL from "../../assets/images/photos/hero_desktop.jpg"
 import { useState, useEffect } from "react"
 
 function Hero() {
     const [open, setOpen] = useState(false);
-
     const buttonry = [
         {
             "id": 0,
@@ -40,26 +41,23 @@ function Hero() {
             "link": "#contact",
         }
     ]
-    
-    /* CAMBIA EL ESTADO DEL STATE CON UN USEEFFECT. */
-    /*function handleClick(close){
-        window.document.location.hash = close;
-        setOpen(false);
-    }*/
-
     return (
         <>
             <section id="hero">
-                <img className="heroPhoto" src={hero} alt="Laptop et café" id="home"></img>
-                <div className="heroContent">
+                <picture className="heroPhoto">
+                    <source media="(min-width: 1025px)" srcSet={`${heroL} 1440w`} />
+                    <source media="(min-width: 769px)" srcSet={`${heroM} 1424w`} />
+                    <img src={heroS} alt="Hero: laptop et café" sizes="100vw" srcSet={`${heroS} 375w`} />
+                </picture>
+
+                <navbar className="heroContent">
                     <div className="tophead">
                         <h1>Susana de Ory</h1>
                         <h2>Portfolio Développeuse Front End</h2>
                     </div>
                     <Button className="buttonGhost" onClick={() => setOpen(!open)}><img className="heroIcon" type="button" src={menu} alt="Web menu"></img></Button>
                     {open && <Menu menuOptions = {buttonry} className="headerMenu" closeMenu={() => setOpen(false)} />}
-                </div>
-                
+                </navbar>            
             </section>
         </>
     )

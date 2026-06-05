@@ -24,8 +24,7 @@
     display: grid;
     grid-template-columns: repeat(2, 100px);
     gap: 10px;
-
-  justify-content: center;
+    justify-content: center;
 }
 .iconId {
     width: 100px;
@@ -52,4 +51,16 @@
 }
 .skillModal p {
     padding: 10px 0;
+}
+.skillModal {
+    padding: 30px 20px 0px 20px;
+}
+
+@media all and (min-width: 769px) {
+  .iconList {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+
 }
