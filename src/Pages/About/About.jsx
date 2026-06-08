@@ -1,7 +1,5 @@
 import './About.css'
-import portraitS from "../../assets/images/photos/SujuBN_mobile.avif"
-import portraitM from "../../assets/images/photos/SujuBN_tablet.avif"
-import portraitL from "../../assets/images/photos/SujuBN_desktop.avif"
+import portrait from "../../assets/images/photos/SdO.avif"
 
 function About() {
     return (
@@ -9,10 +7,7 @@ function About() {
             <section id="about">
                 <h3>À propos de moi</h3>
                 <div className="allAbout">
-                    <picture>
-                        <source media="(min-width: 769px)" srcSet={portraitL} />
-                        <img src={portraitS} alt="Susana de Ory" />
-                    </picture>
+                    <img src={portrait} alt="Susana de Ory" />
                     <section className="aboutText">
                         <p>
                             Je suis convaincue qu’un développeur doit maîtriser les technologies qu’il utilise. Les outils 

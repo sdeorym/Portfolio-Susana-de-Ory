@@ -66,7 +66,8 @@ function Contact() {
                 text="Envoyer"
                 className = {((formData.username!="") && (formData.email!="")) ? "submit enabled" : "submit disabled"} 
                 disabled = {((formData.username=="") || (formData.email=="")) ? true : false}
-                data={formData}     
+                data={formData}
+                aria="Bouton envoyer message"     
             />
         </form>
       

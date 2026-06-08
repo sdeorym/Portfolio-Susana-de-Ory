@@ -6,7 +6,6 @@
   --brown-focus: #935E23;
   --blue-shadow: rgba(0, 59, 111, 0.5);
   --bluey-shadow: rgba(0, 59, 111, 0.25);
-  --bluey-shadow2: rgba(0, 59, 111, 0.75);
   --nunito: 'Nunito', sans-serif;
 }
 body {
@@ -74,7 +73,7 @@ ul {
   overflow: auto;
   position: relative;
   box-sizing: border-box;
-  align-items: flex-start;
+  /*align-items: flex-start;*/
 }
 .closure {
   height: 20px;
@@ -89,7 +88,7 @@ ul {
 }
 @media all and (min-width: 769px) {
   .modal {
-      max-width: 60%;
+      max-width: 50%;
   }
 
 }

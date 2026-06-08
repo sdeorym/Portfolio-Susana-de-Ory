@@ -88,11 +88,17 @@ select {
     select {
         width: 25%;
     }
-
+    .projectCards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 293px));
+    }
 }
 @media all and (min-width: 1025px) {
     select {
         width: 20%;
     }
+    .projectCards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 264px));
+    }
+
 }
 

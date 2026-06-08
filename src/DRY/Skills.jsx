@@ -12,7 +12,7 @@ function Skills({title, array})  {
             <div className="iconList">
                 {array.map((item) =>                
                     <div className="iconId" key={item.id}>
-                        <Button onClick={() => setIsSelected(item)}>
+                        <Button aria={`Détails de ${item.title}`} onClick={() => setIsSelected(item)}>
                             <img src={item.src} alt={item.alt}></img>
                         </Button>                        
                         <small>{item.title}</small>                        

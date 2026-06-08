@@ -17,7 +17,7 @@ function CardS({projects, technologies}) {
                         <p>{p.brief}</p>
                         <p><b>{technologies}</b> {p.stack}</p>
                     </div>
-                    <Button className="buttonCard" onClick={() => setIsSelected(p)} type="button" value="modal-opener" title="Voir plus" text="Voir plus" />
+                    <Button aria={`Voir détails de ${p.title}`} className="buttonCard" onClick={() => setIsSelected(p)} type="button" value="modal-opener" title="Voir plus" text="Voir plus" />
                 </div>)}
                 {isSelected && (
                     <Modal 

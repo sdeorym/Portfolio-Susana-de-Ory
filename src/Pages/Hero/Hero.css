@@ -7,18 +7,22 @@
     overflow: hidden;
 }
 .heroPhoto {
-    position: absolute;
+    /*position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    /*display: block;*/
+    display: block;*/
+    width: 100%;
+    height: auto;
+    display: block;
 }
 .heroPhoto img {
-    object-fit: cover;
+/*    object-fit: cover;
     object-position: center;
+    height: 100%;  */  
     display: block;
     width: 100%;
-    height: 100%;
+
 }
 .heroContent {
     position: absolute;

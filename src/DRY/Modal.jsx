@@ -10,9 +10,9 @@ return (
             <div className="overlay" onClick={onClose}>
                 <div className="modal" onClick={(e) => e.stopPropagation()}>
                     <div className="info">
-                        <Button buttonType="button" onClick={onClose} className="closure">
+                        <Button aria="Fermer fenêtre" buttonType="button" onClick={onClose} className="closure">
                             <img src={closure} alt="Fermer la fenêtre"></img>
-                            </Button>
+                        </Button>
                         {content}
                     </div>
                 </div>

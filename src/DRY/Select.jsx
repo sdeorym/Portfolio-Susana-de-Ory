@@ -12,7 +12,7 @@ function Select({stacks, onChange}) {
     return (
         <div className="selector">
             <label htmlFor="stack">Choisissez les technologies :</label>
-            <select id="stack" name="stack" defaultValue=" " onChange={e => changeValue(e.target.value)}>
+            <select id="stack" name="stack" value={stacked} onChange={e => changeValue(e.target.value)}>
                 {stacksArray.map((s, index) =>
                     <option key={index} value={s}>{s}</option>)}
             </select>

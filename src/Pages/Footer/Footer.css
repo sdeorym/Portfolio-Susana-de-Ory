@@ -16,7 +16,7 @@
 .footerMenu button, .links button {
     border: none;
     background-color: var(--bg);
-    color: var(--blue-focus);
+    color: var(--blue-focus);    
 }
 .footerMenu ul {
     display:flex;
@@ -24,9 +24,14 @@
     justify-content: space-between;
     list-style: none;
     padding: 0;
-    margin: 5px;    
+    margin: 5px;        
+}
+.footerMenu button {
+    min-height: 44px;
+    min-width: 44px;
 }
 .footerMenu button a {
     text-decoration: none;
     color: inherit;
+    /*padding: 12px;*/
 }
