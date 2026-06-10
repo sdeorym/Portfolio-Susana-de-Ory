@@ -4,6 +4,9 @@ import CardS from "../../DRY/CardS.jsx"
 import marseille from "../../assets/images/projects/marseille_mobile.jpg"
 import restau from "../../assets/images/projects/restaus_mobile.jpg"
 import skate from "../../assets/images/projects/skate_mobile.jpg"
+import kasa from "../../assets/images/projects/kasa.avif"
+import memoirs from "../../assets/images/projects/memoirs.avif"
+import eventsweb from "../../assets/images/projects/724events.avif"
 import { useState } from "react";
 
 
@@ -53,7 +56,7 @@ function Projects() {
         },
         {           
             "id": "4",
-            "src": restau,
+            "src": memoirs,
             "title": "Mémoirs des cendres",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
@@ -63,7 +66,7 @@ function Projects() {
         },
         {
             "id": "5",
-            "src": skate,
+            "src": kasa,
             "title": "Kasa",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
@@ -83,7 +86,7 @@ function Projects() {
         },
         {            
             "id": "7",
-            "src": skate,
+            "src": eventsweb,
             "title": "724 events",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",

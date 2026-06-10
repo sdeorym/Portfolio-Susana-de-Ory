@@ -84,6 +84,9 @@ select {
     display: block;
     margin: 0 auto;
 }
+.projectModal h4, .projectModal p {
+    margin: 7px;}
+
 @media all and (min-width: 769px) {
     select {
         width: 25%;

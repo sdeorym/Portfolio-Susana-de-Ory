@@ -42,7 +42,7 @@ function Hero() {
     return (
         <>
             <section id="hero">
-                <img src={hero} alt="Hero: laptop et café"/>
+                <img src={hero} alt="Hero: laptop et café" className="heroPhoto" />
                 <navbar className="heroContent">
                     <div className="tophead">
                         <h1>Susana de Ory</h1>
