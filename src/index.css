@@ -40,6 +40,13 @@ h4 {
   text-align: center;
   font-weight: 700;
 }
+h5 {
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
 button:hover {
   transform: scale(1.10);
   font-weight: bold;
@@ -70,7 +77,6 @@ ul {
   border-radius: 20px;  
   box-sizing: border-box;
   z-index: 9999;
-
 }
 .closure {
   height: 20px;
@@ -85,12 +91,18 @@ ul {
 }
 @media all and (min-width: 769px) {
   .modal {
-      max-width: 50%;
+      max-width: 60%;
       inset: 0;
   }
 }
-@media (min-width: 769px) and (max-width: 1025px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .modal {
-    margin: 100px auto 0 auto;
+    margin: 0 auto 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .modal {
+      max-width: 30%;
+      inset: 0;
   }
 }

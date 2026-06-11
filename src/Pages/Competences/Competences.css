@@ -47,13 +47,14 @@
 }
 .skillModal img {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 .skillModal p {
-    padding: 10px 0;
+    margin: 10px 5px;
+    font-size: 1rem; 
 }
 .skillModal {
-    padding: 30px 20px 0px 20px;
+    padding: 30px;    
 }
 
 @media all and (min-width: 769px) {
@@ -62,5 +63,9 @@
     flex-direction: row;
     justify-content:space-between;
   }
+  .skillModal p {
+    font-size: 1.125rem; 
+    margin: 15px;
+}
 
 }

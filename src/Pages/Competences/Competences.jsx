@@ -67,65 +67,65 @@ function Competences() {
             "id": 0,
             "src": analytique,
             "alt": "Icône Analytiqye",
-            "title": "Analytique",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+            "title": "Esprit d'analyse",
+            "text": "Avant de coder, j'analyse la structure pour éviter les répétitions, maximiser la réutilisation et penser de façon stratégique, pas seulement tactique."
         },
         {
             "id": 1,
             "src": creativite,
             "alt": "Icône créativité",
             "title": "Créativité",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+            "text": "Concevoir des solutions là où il n'y en a pas d'évidentes : une navigation non linéaire pour une BD interactive, des structures de composants réutilisables, ou un roman historique de zéro."
         },
         {
             "id": 2,
             "src": detail,
             "alt": "Icône Attention au détail",
             "title": "Attention au détail",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+            "text": "Du CSS lisible et structuré à l'accessibilité : les détails font la différence entre un code qui fonctionne et un code qui dure."
         },
         {
             "id": 3,
             "src": colab,
             "alt": "Icône Collaboration interdisciplinaire",
             "title": "Collaboration interdisciplinaire",
-            "text": "Collaboration avec des animateurs de la Grand École des Gobelins pour la création d'une bande dessinée intéractive (Mémoirs des cendres)."
+            "text": "Travailler avec des profils différents — graphistes, narrateurs, chefs de projet — m'a appris que le meilleur résultat naît quand chacun comprend un peu le métier de l'autre."
         },
         {
             "id": 4,
             "src": resultats,
             "alt": "Icône Orientée vers les résultats",
             "title": "Orientée vers les résultats",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+            "text": "Chaque projet mérite d'être mené jusqu'au bout. Que ce soit une application web ou un roman, je m'engage sur le livrable, pas seulement sur le processus."
         },
         {
             "id": 5,
             "src": perseverance,
             "alt": "Icône Persévérance",
             "title": "Persévérance",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+            "text": "Finir ce qu'on commence, même quand c'est long et difficile. Cinq romans en sont la preuve."
         },
         {
             "id": 6,
             "src": adaptable,
             "alt": "Icône adaptabilité",
             "title": "Adaptabilité",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+            "text": "Nouveaux outils, nouveaux contextes, nouvelles équipes — m'adapter rapidement fait partie de ma façon de travailler."
         },
         {
             "id": 7,
             "src": communication,
             "alt": "Icône Communication",
             "title": "Communication",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
+            "text": "Traductrice technique pendant des années, je sais adapter le message à l'interlocuteur — que ce soit un client, un collègue développeur ou un utilisateur final."
         },
         {
             "id": 8,
             "src": autonome,
             "alt": "Icône Autonomie",
             "title": "Autonomie",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At minus fuga, veritatis numquam voluptatibus accusamus est unde a corrupti quas voluptas quasi iste accusantium eligendi eveniet? Modi velit harum perspiciatis?"
-        }/**/
+            "text": "Mener des projets longs en totale autonomie — des romans aux applications web — m'a appris à m'organiser, à prendre des décisions seules et à livrer sans qu'on me tienne la main."
+        }
     ]
     const skillsBox=[
         {

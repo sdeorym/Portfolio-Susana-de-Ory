@@ -82,18 +82,25 @@ select {
     width: 98%;
     border-radius: 10px;
     display: block;
-    margin: 0 auto;
+    margin: 5px auto;
 }
-.projectModal h4, .projectModal p {
+.projectModal h4 {
     margin: 7px;}
+
+.projectModal p {
+    margin: 3.5px;
+}
 
 @media all and (min-width: 769px) {
     select {
         width: 25%;
     }
     .projectCards {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 293px));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 293px));        
     }
+    .projectModal img {
+        margin: 10px auto;
+    } 
 }
 @media all and (min-width: 1025px) {
     select {
@@ -102,6 +109,8 @@ select {
     .projectCards {
         grid-template-columns: repeat(auto-fit, minmax(250px, 264px));
     }
-
+    .projectModal img {
+        margin: 15px auto;
+    } 
 }
 
