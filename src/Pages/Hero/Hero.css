@@ -76,17 +76,35 @@
     background: transparent;
     border: none;
     color: var(--blue-focus);
+    font-size: 1rem;
 }
 .headerMenu li:hover {
     background-color: var(--blue-focus);   
 }
 .headerMenu button:hover {
-     color: var(--w-text);
+    color: var(--w-text);
+    padding: 0 5px;
 }
 .headerMenu a {
     color: inherit;
     text-decoration: none;
+    font-size: 1rem;
 }
 .headerMenu a:visited {
     color: inherit;
+}
+
+@media all and (min-width: 769px) {
+  .headerMenu button, .headerMenu a {
+    font-size: 1.1rem;
+  }
+  .headerMenu {
+    width:25%;
+
+  }
+}
+@media all and (min-width: 1025px) {
+  .headerMenu button, .headerMenu a {
+    font-size: 1.2rem;
+  }
 }

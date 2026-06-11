@@ -1,12 +1,16 @@
 import './Projects.css'
 import Select from "../../DRY/Select.jsx"
 import CardS from "../../DRY/CardS.jsx"
-import marseille from "../../assets/images/projects/marseille_mobile.jpg"
-import restau from "../../assets/images/projects/restaus_mobile.jpg"
-import skate from "../../assets/images/projects/skate_mobile.jpg"
-import kasa from "../../assets/images/projects/kasa.avif"
+import booki from "../../assets/images/projects/booki.avif"
+import ohmy from "../../assets/images/projects/ohmyfood.avif"
+import print from "../../assets/images/projects/print.avif"
+import bluel from "../../assets/images/projects/bluel.avif"
 import memoirs from "../../assets/images/projects/memoirs.avif"
+import kasa from "../../assets/images/projects/kasa.avif"
+import nina from "../../assets/images/projects/nina.avif"
 import eventsweb from "../../assets/images/projects/724events.avif"
+import argent from "../../assets/images/projects/argentBank.avif"
+import lpg from "../../assets/images/projects/lpg.avif"
 import { useState } from "react";
 
 
@@ -16,42 +20,42 @@ function Projects() {
     const projects = [
         {
             "id": "0",
-            "src": marseille,
+            "src": booki,
             "title": "Booki",
             "brief": "Développement d'une agence de voyages",
             "explanation": "Création de la page d'accueil de l'agence de voyages Booki ; l'information affichée est pour la destination Marseille",
             "stack": "HTML + CSS",
-            "web": "",
+            "web": "https://sdeorym.github.io/booki/",
             "alt": "Capture d'écran du site Booki"
         },
         {
             "id": "1",
-            "src": restau,
+            "src": ohmy,
             "title": "Oh my food",
             "brief": "Développement d'un site pour réservation en restaurant",
             "explanation": "Création d'un site pour réserver une table et commander des plats en avance à l'arrivée au restaurant.<br>",
             "stack": "HTML + CSS + Sass",
-            "web": "",
+            "web": "https://sdeorym.github.io/OhMyFood/index.html",
             "alt": "Capture d'écran du site Oh my food"
         },
         {
             "id": "2",
-            "src": skate,
+            "src": print,
             "title": "Print it!",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
             "stack": "HTML + CSS + JavaScript",
-            "web": "",
+            "web": "https://sdeorym.github.io/printIt/",
             "alt": "Capture d'écran du site Print it!"
         },
         {
             "id": "3",
-            "src": marseille,
+            "src": bluel,
             "title": "Sophie Bluel Architecte d'interieur",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
             "stack": "HTML + CSS + JavaScript",
-            "web": "",
+            "web": "https://portfolio-sophie-bluel-lyart.vercel.app/",
             "alt": "Capture d'écran du site Sophie Bluel"
         },
         {           
@@ -76,12 +80,12 @@ function Projects() {
         },
         {   
             "id": "6",
-            "src": marseille,
+            "src": nina,
             "title": "Nina Carducci",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
             "stack": "HTML + CSS",
-            "web": "",
+            "web": "https://sdeorym.github.io/ninacarducci/",
             "alt": "Capture d'écran du site Nina Carducci"
         },
         {            
@@ -96,17 +100,17 @@ function Projects() {
         },
         {            
             "id": "8",
-            "src": marseille,
+            "src": argent,
             "title": "ArgentBank",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
             "stack": "HTML + CSS + React + Redux Toolkit",
-            "web": "",
+            "web": "https://argent-bank-frontend-omega.vercel.app/",
             "alt": "Capture d'écran du site ArgentBank"
         },
         {            
             "id": "9",
-            "src": restau,
+            "src": lpg,
             "title": "LPG Consulting",
             "brief": "Lorem ipsum dolor sit",
             "explanation": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsa, nam officiis perferendis temporibus obcaecati animi perspiciatis quis. Minima ex aperiam asperiores quae reprehenderit. Neque dignissimos quam error ducimus explicabo?",
