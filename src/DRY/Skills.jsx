@@ -22,7 +22,9 @@ function Skills({title, array})  {
                     <Modal 
                         opened={(isSelected !== null)} 
                         onClose={() => setIsSelected(null)}
-                        content={isSelected && <ContentModal content={isSelected} classname="skillModal" />}>
+                        content={isSelected && <ContentModal content={isSelected} classname="skillModal" />}
+                        info="infoS"
+                        modal="modalS">
                     </Modal>
                 )}
             </div>

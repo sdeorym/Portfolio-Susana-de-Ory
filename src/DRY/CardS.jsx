@@ -23,7 +23,9 @@ function CardS({projects, technologies}) {
                     <Modal 
                         opened={(isSelected !== null)} 
                         onClose={() => setIsSelected(null)}
-                        content={isSelected && <ContentModal content={isSelected} technologies="Technologies :" classname="projectModal" cardTitle="cardSTitle" />}>
+                        content={isSelected && <ContentModal content={isSelected} technologies="Technologies :" classname="projectModal" cardTitle="cardSTitle" />}
+                        info="infoP"
+                        modal="modalP">
                     </Modal>
                 )}
             </section>

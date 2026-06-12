@@ -9,7 +9,7 @@ return (
             <img src={content.src} alt={content.alt}></img>
             <p>{content.text}</p>
             <p>{content.explanation}</p>
-            <p><b>{technologies}</b> {content.stack}</p>
+            <h5>{technologies}</h5><p>{content.stack}</p>
         </div>
     </>
 )
