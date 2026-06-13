@@ -16,7 +16,7 @@ import { useState } from "react";
 
 function Projects() {
     const [techno, setTechno] = useState("");
-
+    /*cap photos*/
     const projects = [
         {
             "id": "0",
