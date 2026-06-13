@@ -15,6 +15,7 @@
 }
 .allAbout img {
     width: 75%;
+    height: auto;
     margin: 0 auto;
 }
 @media all and (min-width: 768px) {
