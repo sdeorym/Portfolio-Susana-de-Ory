@@ -103,6 +103,7 @@ ul {
   cursor: pointer;
   z-index: 1000;
 }
+img { width: 100% }
 @media (min-width: 769px) and (max-width: 1024px) {
   .modalP {
     margin: 50px auto 0 auto;

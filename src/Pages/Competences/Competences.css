@@ -48,6 +48,7 @@
 .skillModal img {
     display: block;
     margin: 20px auto;
+    width: 50%;
 }
 .skillModal p {
     margin: 10px 5px;
@@ -58,14 +59,21 @@
 }
 
 @media all and (min-width: 769px) {
-  .iconList {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-  }
-  .skillModal p {
-    font-size: 1.125rem; 
-    margin: 15px;
+    .iconList {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    .skillModal p {
+        font-size: 1.125rem; 
+        margin: 15px;
+    }
+    .skillModal img {
+        width: 25%;
+    } 
 }
-
+@media all and (min-width: 1025px) {
+    .skillModal img {
+        width: 15%;
+    }
 }
