@@ -16,7 +16,8 @@
 .footerMenu button, .links button {
     border: none;
     background-color: var(--bg);
-    color: var(--blue-focus);    
+    color: var(--blue-focus); 
+    padding: 10px;   
 }
 .footerMenu ul {
     display:flex;
