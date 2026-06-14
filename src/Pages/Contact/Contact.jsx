@@ -13,35 +13,35 @@ function Contact() {
         console.log(formData, { ...formData, [name]: value});
     };
 
-        const handleSubmit = async (e) => {
-            e.preventDefault();
-            const dataToSend = {username: formData.username, email: formData.email, message: formData.message};
-            const stringifiedJsonData = JSON.stringify(dataToSend);
-            try {
-                const response = await fetch("/api/contact", {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: stringifiedJsonData
-                });
-                
-                if (!response.ok) {
-                    const text = await response.text(); 
-                    throw new Error("L'envoi du message a échoué. Veuilllez essayer plus tard.");
-                }
-                const result = await response.json();
-                console.log(result);
-                alert("L'envoi du message a réussi.");
-                setFormData({username: '', email: '', message: ''});
-                e.target.reset();
-                // handleModal();         
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const dataToSend = {username: formData.username, email: formData.email, message: formData.message};
+        const stringifiedJsonData = JSON.stringify(dataToSend);
+        try {
+            const response = await fetch("/contact", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: stringifiedJsonData
+            });
+            
+            if (!response.ok) {
+                const text = await response.text(); 
+                throw new Error("L'envoi du message a échoué. Veuilllez essayer plus tard.");
             }
-            catch(error) {
-                alert("L'envoi du message a échoué. Veuilllez essayer plus tard.");
-                // handleModal();
-                }
+            const result = await response.json();
+            console.log(result);
+            alert("L'envoi du message a réussi.");
+            setFormData({username: '', email: '', message: ''});
+            e.target.reset();
+            // handleModal();         
         }
+        catch(error) {
+            alert("L'envoi du message a échoué. Veuilllez essayer plus tard.");
+            // handleModal();
+            }
+    }
     
   return (
     <section className="contactform" id="contact">
