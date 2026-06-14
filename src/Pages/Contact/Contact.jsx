@@ -18,6 +18,7 @@ function Contact() {
         const dataToSend = {username: formData.username, email: formData.email, message: formData.message};
         const stringifiedJsonData = JSON.stringify(dataToSend);
         try {
+            console.log("Antes fetch en handleSubmit");
             const response = await fetch("/contact", {
                 method: 'POST',
                 headers: {
@@ -25,6 +26,7 @@ function Contact() {
                 },
                 body: stringifiedJsonData
             });
+            console.log("Después fetch en handleSubmit", response.ok, response.text());
             
             if (!response.ok) {
                 const text = await response.text(); 
