@@ -8,9 +8,7 @@ function Contact() {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        console.log(name, value);
         setFormData({ ...formData, [name]: value});
-        console.log(formData, { ...formData, [name]: value});
     };
 
     const handleSubmit = async (e) => {
@@ -18,7 +16,6 @@ function Contact() {
         const dataToSend = {username: formData.username, email: formData.email, message: formData.message};
         const stringifiedJsonData = JSON.stringify(dataToSend);
         try {
-            console.log("Antes fetch en handleSubmit");
             const response = await fetch("/contact", {
                 method: 'POST',
                 headers: {
@@ -26,23 +23,22 @@ function Contact() {
                 },
                 body: stringifiedJsonData
             });
-            console.log("Después fetch en handleSubmit", response.ok, response.text());
             
             if (!response.ok) {
-                const text = await response.text(); 
+                const text = await response.text();
                 throw new Error("L'envoi du message a échoué. Veuilllez essayer plus tard.");
             }
             const result = await response.json();
-            console.log(result);
             alert("L'envoi du message a réussi.");
             setFormData({username: '', email: '', message: ''});
             e.target.reset();
-            // handleModal();         
+
+            handleModal();         
         }
         catch(error) {
             alert("L'envoi du message a échoué. Veuilllez essayer plus tard.");
             // handleModal();
-            }
+        }
     }
     
   return (

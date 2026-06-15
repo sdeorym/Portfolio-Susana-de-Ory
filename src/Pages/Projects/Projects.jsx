@@ -197,7 +197,6 @@ function Projects() {
     const filteredProjects = ((techno != "Tous" && techno != "") ? (projects.filter(project => project.stack === techno)) : projects)
 
     const stacks = new Set(projects.map((project) => project.stack))
-    console.log (techno);
     return (
         <section id="projects">
             <h3>Mes projets</h3>

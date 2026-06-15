@@ -44,8 +44,6 @@ app.post("/contact", async (req, res) => {
   // const basicAuth = btoa(pw);
 
   const { username, email, message } = req.body;
-  console.log(req.body);
-  console.log("Name: ", username, " Email: ", email, " Message: ", message );
 
   const resend = new Resend(API_key);
 
@@ -55,7 +53,7 @@ app.post("/contact", async (req, res) => {
     subject: '[Webpage contact]',
     text: 'From: ' + username + ' Enail: ' + email + ' Message: ' + message
     });
-  console.log(data, "Error: ", error)
+  res.status(200).json({ success: true });
 });
   
 
