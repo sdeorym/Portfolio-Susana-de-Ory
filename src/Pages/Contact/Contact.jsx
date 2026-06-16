@@ -32,12 +32,9 @@ function Contact() {
             alert("L'envoi du message a réussi.");
             setFormData({username: '', email: '', message: ''});
             e.target.reset();
-
-            handleModal();         
         }
         catch(error) {
             alert("L'envoi du message a échoué. Veuilllez essayer plus tard.");
-            // handleModal();
         }
     }
     

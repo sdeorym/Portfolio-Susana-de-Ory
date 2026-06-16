@@ -31,16 +31,16 @@ var access = fs.createWriteStream('./node.access.log', { flags: 'a' });
 
 process.stdout.write = process.stderr.write = access.write.bind(access);
 
-
-//process.env.MJ_APIKEY_PUBLIC, process.env.MJ_APIKEY_PRIVATE
+dotenv.config();
 
 app.get("/", async (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', '/index.html'));
 });
 
+
 app.post("/contact", async (req, res) => {
-  const url="https://api.resend.com/emails";
-  const API_key ="re_UTWB5E3C_A6yRkNKgpu6MKdGSKKxW3pEq";
+  const url= process.env.MAIL_URL;
+  const API_key = process.env.RESEND_API_KEY;
   // const basicAuth = btoa(pw);
 
   const { username, email, message } = req.body;
