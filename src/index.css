@@ -68,7 +68,7 @@ ul {
   z-index: 1000;
 }
 .modal {
-  position: fixed; /*probar con fixed cuando otras cosas hayan cambiado*/
+  position: fixed; 
   width: 80%;
   max-width: 80%;  
   background: var(--w-text);
@@ -81,16 +81,17 @@ ul {
   transform: translateX(-50%);
 }
 .modalP {
-  height: 70vh;
+  height: 90vh;
   margin: 10px auto 0 auto;
 }
 .modalS {
-  height: 60vh;
+  height: 75vh;
   margin: 20px auto 0 auto;
 }
 .infoP {
-  max-height: calc(65vh + 30px);
+  max-height: calc(85vh + 30px);
   overflow-y: scroll;
+  border-radius: 25px;
 }
 .closure {
   height: 20px;
@@ -105,27 +106,35 @@ ul {
 }
 img { width: 100% }
 @media (min-width: 769px) and (max-width: 1024px) {
+
   .modalP {
-    margin: 50px auto 0 auto;
+    margin: 10px auto 0 auto;
+    /*height: 90vh;*/
     max-width: 50%;
-    height: 50vh;
   }
   .modalS {
-    height: 35vh;
+    max-width: 40%;
   }
   .infoP {
-    max-height: calc(45vh + 30px);
+    max-height: calc(82.5vh + 30px);
     overflow-y: scroll;
+    margin: 5px;
   }
 }
 @media (min-width: 1025px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
   .modalP {
-      margin: 60px auto 0 auto;
+      margin: 25px auto 0 auto;
       max-width: 30%;
-      height: 75vh;
   }
   .infoP {
-    max-height: calc(70vh + 30px);
+    max-height: calc(85vh + 30px);
     overflow-y: scroll;
+  }
+  .modalS {
+    max-width: 30%;
   }
 }

@@ -5,7 +5,7 @@ function Select({stacks, onChange}) {
     const stacksArray = ["Tous", ...stacks];
 
     const changeValue = (newValue) => {
-        onChange(newValue); // This is the value to be sent back to Events in type.
+        onChange(newValue);
         setStacked(newValue);
     };
 

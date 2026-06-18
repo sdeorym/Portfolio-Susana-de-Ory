@@ -20,7 +20,6 @@
     border: none;
     background-color: var(--bg);
     color: var(--blue-focus); 
-    padding: 10px;   
 }
 .footerMenu ul {
     display:flex;
@@ -33,10 +32,9 @@
 .footerMenu button {
     min-height: 44px;
     min-width: 44px;
-    
+    padding: 12px;   
 }
 .footerMenu button a {
     text-decoration: none;
     color: inherit;
-    /*padding: 12px;*/
 }

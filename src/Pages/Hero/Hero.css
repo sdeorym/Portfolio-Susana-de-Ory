@@ -3,27 +3,12 @@
     scroll-margin-top: 0px;
     width: 100%;
     overflow: hidden;
-/*  height: 100vh;
-    height: 100svh;*/
 }
 .heroPhoto {
-    /*position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    display: block;*/
     width: 100%;
     height: auto;
     display: block;
 }
-/*.heroPhoto img {
-/*    object-fit: cover;
-    object-position: center;
-    height: 100%;   
-    display: block;
-    width: 100%;
-
-}*/ 
 .heroContent {
     position: absolute;
     inset: 0;
@@ -68,7 +53,7 @@
     background-color:var(--bg);
     z-index:9999;
     align-items: flex-start;
-    padding-right: 5px;         /* separa del borde derecho */
+    padding-right: 5px;
     color: var(--blue-focus);
     gap: 4px;
 }
@@ -106,5 +91,11 @@
 @media all and (min-width: 1025px) {
   .headerMenu button, .headerMenu a {
     font-size: 1.2rem;
+  }
+}
+
+@media all and (min-width: 1441px) {
+  .headerMenu {
+    right: calc((100vw - 1440px) / 2);
   }
 }

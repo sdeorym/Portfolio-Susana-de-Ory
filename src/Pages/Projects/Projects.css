@@ -71,17 +71,17 @@ select {
 }
 .projectModal {
     width: 98%;
+    height: 100%;
     box-sizing: border-box;
     background-color: var(--blue-focus);
     color: var(--w-text);
     padding: 5px 10px;
     border-radius: 20px;
     margin: 35px 1% 1% 1%;
-
 } 
 .projectModal img {
     width: 98%;
-    border-radius: 10px;
+    border-radius: 20px;
     display: block;
     margin: 5px auto;
 }

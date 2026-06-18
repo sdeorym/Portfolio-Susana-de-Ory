@@ -21,7 +21,6 @@ form {
 .textbox {
     display:flex;
     flex-direction: column;
-    /*margin: 5%;*/  
     font-family: 'Nunito';
     text-align: left;
     gap: 5px;
@@ -56,7 +55,6 @@ input::placeholder, textarea::placeholder {
 .disabled {
     background-color: var(--bg);
     color: var(--brown-focus);
-    /*opacity: 0.5;*/
     cursor: not-allowed;
     pointer-events: none;
 }
