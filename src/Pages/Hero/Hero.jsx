@@ -43,14 +43,14 @@ function Hero() {
         <>
             <section id="hero">
                 <img src={hero} alt="Hero: laptop et café" className="heroPhoto" />
-                <navbar className="heroContent">
+                <section className="heroContent">
                     <div className="tophead">
                         <h1>Susana de Ory</h1>
                         <h2>Portfolio Développeuse Front End</h2>
                     </div>
-                    <Button className="buttonGhost" aria="Menu principal" onClick={() => setOpen(!open)}><img className="heroIcon" type="button" src={menu} alt="Web menu"></img></Button>
+                    <Button className="buttonGhost" ariaLabel="Menu principal" onClick={() => setOpen(!open)}><img className="heroIcon" type="button" src={menu} alt="Web menu"></img></Button>
                     {open && <Menu menuOptions = {buttonry} className="headerMenu" closeMenu={() => setOpen(false)} />}
-                </navbar>            
+                </section>            
             </section>
         </>
     )

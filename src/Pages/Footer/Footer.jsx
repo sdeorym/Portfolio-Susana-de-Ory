@@ -10,7 +10,7 @@ const menuCards = [
     {
         "id" : 0,
         "title": "Accueil",
-        "link" : "#home"
+        "link" : "#hero"
     }, 
     {
         "id" : 1,
@@ -32,7 +32,7 @@ const menuCards = [
 return (
     <>
         <div className="closing">
-            <Menu menuOptions = {menuCards} className="footerMenu" />
+            <Menu menuOptions = {menuCards} className="footerMenu" ariaLabel="Liens du pied de page" />
             <div className="links">
                 <Button aria="Ouvrir profile Linkedin"><a href="https://www.linkedin.com/in/sdeorym/?locale=fr-FR"><img src={linkedin} alt="Icône Linkedin"></img></a></Button>
                 <Button aria="Ouvrir profile Github"><a href="https://github.com/sdeorym"><img src={github} alt="Icône Github"></img></a></Button>

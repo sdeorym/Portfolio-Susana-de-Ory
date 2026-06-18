@@ -1,10 +1,10 @@
 import Button from "./Button.jsx";
 
-function Menu({menuOptions, className, closeMenu}) {
+function Menu({menuOptions, className, closeMenu, ariaLabel}) {
 
 return (
     <>
-        <nav className={className}>
+        <nav className={className} aria-label={ariaLabel}>
             <ul>          
             {menuOptions.map((s) =>
                 <li key={s.id}>

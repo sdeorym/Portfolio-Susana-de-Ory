@@ -14,6 +14,9 @@
     width: 25px;
 }
 .footerMenu button, .links button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     background-color: var(--bg);
     color: var(--blue-focus); 
@@ -30,6 +33,7 @@
 .footerMenu button {
     min-height: 44px;
     min-width: 44px;
+    
 }
 .footerMenu button a {
     text-decoration: none;
