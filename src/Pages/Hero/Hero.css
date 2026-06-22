@@ -50,7 +50,7 @@
     top:55px;
     right:0;
     width:52.5%;
-    background-color:var(--bg);
+    background-color:var(--bluest-shadow);
     z-index:9999;
     align-items: flex-start;
     padding-right: 5px;

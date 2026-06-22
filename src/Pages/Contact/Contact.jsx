@@ -44,11 +44,11 @@ function Contact() {
         <form  onSubmit={handleSubmit}>
             <div className="textbox">
                 <label>Nom</label>
-                <input placeholder="Votre nom ici" type="text" id="username" name="username" onBlur={handleChange} required />
+                <input placeholder="Votre nom ici" type="text" id="username" name="username" autocomplete="name" onBlur={handleChange} required />
             </div>
             <div className="textbox">
                 <label >Courriel</label>
-                <input placeholder="info@example.com" type="email" id="email" name="email" onBlur={handleChange} required />
+                <input placeholder="info@example.com" type="email" id="email" name="email" autocomplete="email" onBlur={handleChange} required />
             </div>
             <div className="textbox">
                 <label >Message</label>
