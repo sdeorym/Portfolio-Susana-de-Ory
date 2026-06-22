@@ -7,10 +7,10 @@
     display:flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10%;
+    gap: 20px;
     padding: 10px;
 }
-.links img {
+.linksImg {
     width: 25px;
 }
 .footerMenu button, .links button {
@@ -24,17 +24,19 @@
 .footerMenu ul {
     display:flex;
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
+    gap: 5vw;
     padding: 0;
     margin: 5px;        
 }
 .footerMenu button {
-    min-height: 44px;
-    min-width: 44px;
+    min-height: 48px;
+    min-width: 48px;
     padding: 12px;   
 }
 .footerMenu button a {
     text-decoration: none;
-    color: inherit;
+    /*font: var(--nunito);*/
+ 
 }
