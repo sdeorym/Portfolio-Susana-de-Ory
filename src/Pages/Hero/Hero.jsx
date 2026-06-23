@@ -7,6 +7,10 @@ import { useState, useEffect } from "react"
 
 function Hero() {
     const [open, setOpen] = useState(false);
+    const [screenFormat, setScreenFormat] = useState(() => {
+        if (typeof window === "undefined") return "";
+        return window.innerWidth <= 375 ? "mobile" : (window.innerWidth <= 1024 ? "tablet" : "desktop");
+    });
     const buttonry = [
         {
             "id": 0,
@@ -39,10 +43,11 @@ function Hero() {
             "link": "#contact",
         }
     ]
+
     return (
         <>
             <section id="hero">
-                <img src={hero} alt="Hero: laptop et café" className="heroPhoto" />
+                <img src={hero} alt="Hero: laptop et café" className="heroPhoto" fetchpriority="high" loading="eager" />
                 <section className="heroContent">
                     <div className="tophead">
                         <h1>Susana de Ory</h1>
