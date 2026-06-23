@@ -48,6 +48,7 @@ function Hero() {
         <>
             <section id="hero">
                 <img src={hero} alt="Hero: laptop et café" className="heroPhoto" fetchpriority="high" loading="eager" />
+                <div className="heroOverlay"></div>
                 <section className="heroContent">
                     <div className="tophead">
                         <h1>Susana de Ory</h1>

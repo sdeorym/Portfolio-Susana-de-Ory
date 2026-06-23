@@ -4,6 +4,13 @@
     width: 100%;
     overflow: hidden;
 }
+.heroOverlay {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--brown-shadow);
+    z-index: 1;
+}
 .heroPhoto {
     height: auto;
     display: block;
@@ -15,7 +22,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 15px;
-    z-index: 10;    
+    z-index: 2;    
 }
 .tophead {
     color: var(--w-text);

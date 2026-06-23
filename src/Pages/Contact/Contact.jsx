@@ -43,16 +43,16 @@ function Contact() {
         <h3>Contact</h3>
         <form  onSubmit={handleSubmit}>
             <div className="textbox">
-                <label>Nom</label>
-                <input placeholder="Votre nom ici" type="text" id="username" name="username" autocomplete="name" onBlur={handleChange} required />
+                <label htmlFor="username">Nom</label>
+                <input placeholder="Votre nom ici" type="text" id="username" name="username" autoComplete="name" onBlur={handleChange} required />
             </div>
             <div className="textbox">
-                <label >Courriel</label>
-                <input placeholder="info@example.com" type="email" id="email" name="email" autocomplete="email" onBlur={handleChange} required />
+                <label htmlFor="email">Courriel</label>
+                <input placeholder="info@example.com" type="email" id="email" name="email" autoComplete="email" onBlur={handleChange} required />
             </div>
             <div className="textbox">
-                <label >Message</label>
-                <textarea className="messagebox" type="message" name="message" rows="10" placeholder="Votre message ici" onBlur={handleChange} required />
+                <label htmlFor="message">Message</label>
+                <textarea id="message" className="messagebox" type="message" name="message" rows="10" placeholder="Votre message ici" onBlur={handleChange} required />
             </div>
             <Button 
                 type="submit" 

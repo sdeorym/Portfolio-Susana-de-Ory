@@ -2,8 +2,10 @@
   --text: #000;
   --w-text: #FFF;
   --bg: #FDFDFD;
-  --blue-focus: #003b6f;
   --brown-focus: #935E23;
+  --blue-focus: #003b6f;
+  --dark-brown-shadow: rgba(147, 94, 35, 0.7);
+  --brown-shadow: rgba(147, 94, 35, 0.45);
   --blue-shadow: rgba(0, 59, 111, 0.5);
   --bluey-shadow: rgba(0, 59, 111, 0.25);
   --bluest-shadow: #BFCEDB;
@@ -30,6 +32,8 @@ h1,
 h2 {
   font-weight: 800;
   text-align: left;
+  color:var(--w-text);
+  text-shadow: 0 2px 12px var(--brown-shadow);
 }
 h3 {
   text-align: center;
