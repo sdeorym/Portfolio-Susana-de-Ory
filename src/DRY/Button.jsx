@@ -1,8 +1,8 @@
-function Button() {
+function Button({className, text, title, value, type, children, onClick, aria}) {
 
 return (
     <>
-        Ola ke ase
+        <button className={className} aria-label={aria} onClick={onClick} type={type} value={value} title={title}>{children || text}</button>
     </>
 )
 

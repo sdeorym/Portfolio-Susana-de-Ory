@@ -1,29 +1,79 @@
+#competences {
+    padding: 30px 50px;
+    scroll-margin-top: 80px;
+}
+#competences h3 {
+    color: var(--blue-focus);
+}
 .skillbox {
-    margin: 5%;
+    margin: 10% 5%;
     border-radius: 15px;
     color: #FFF;
-}
-.skillbox {
     text-align: center;
+    padding: 10px;
 }
 .tech {
-    background-color: #935E23;
+    background-color: var(--brown-focus);
 }
 .softie {
-    background-color: #1D435C;
+    background-color: var(--blue-focus);
 }
 .iconList {
     list-style-type: none;
-    align-items: center;
-    text-wrap: wrap;
-}
-.iconList img {
-    width: 30px;
-}
-.skill-list {
-    margin: 0;
+    margin: 15px 0 0 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2fr;
+    grid-template-columns: repeat(2, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+.iconId {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}    
+.iconId img {
+    width: 40px;
+    object-fit: contain;
+    display: block;
+}
+.iconId button {
+    width: 50px;
+    background-color: var(--w-text);
+}
+.skillModal img {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+}
+.skillModal p {
+    margin: 10px 5px;
+    font-size: 1rem; 
+}
+.skillModal {
+    padding: 30px;
 }
 
+@media all and (min-width: 769px) {
+    .iconList {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    .skillModal p {
+        font-size: 1.125rem; 
+        margin: 15px;
+    }
+    .skillModal img {
+        width: 25%;
+    } 
+}
+@media all and (min-width: 1025px) {
+    .skillModal img {
+        width: 15%;
+    }
+}

@@ -1,4 +1,5 @@
 import './Footer.css'
+import Button from "../../DRY/Button.jsx";
 import Menu from "../../DRY/Menu.jsx";
 import linkedin from "../../assets/images/icons/linkedin.png"
 import github from "../../assets/images/icons/github.png"
@@ -7,37 +8,37 @@ function Footer() {
 
 const menuCards = [
     {
-        "id" : "0",
+        "id" : 0,
         "title": "Accueil",
-        "link" : "Hero"
+        "link" : "#hero"
     }, 
     {
-        "id" : "1",
+        "id" : 1,
         "title": "Projets",
-        "link" : "Projects"
+        "link" : "#projects"
     }, 
     {
-        "id" : "2",
+        "id" : 2,
         "title": "Compétences",
-        "link" : "Competences"
+        "link" : "#competences"
     },
     {
-        "id" : "3",
+        "id" : 3,
         "title": "Contact",
-        "link" : "Contact"
+        "link" : "#contact"
     }
 ]
 
 return (
     <>
-        <Menu menuOptions = {menuCards} />
-        <div className="closure">
+        <div className="closing">
+            <Menu menuOptions = {menuCards} className="footerMenu" ariaLabel="Liens du pied de page" />
+            <div className="links">
+                <Button aria="Ouvrir profile Linkedin"><a href="https://www.linkedin.com/in/sdeorym/?locale=fr-FR"><img src={linkedin} alt="Icône Linkedin" className="linksImg"></img></a></Button>
+                <Button aria="Ouvrir profile Github"><a href="https://github.com/sdeorym"><img src={github} alt="Icône Github" className="linksImg"></img></a></Button>
+            </div>            
             © 2026 Susana de Ory<br />
             <small>Icônes par icons8. Image hero par Daniil Komov.</small>
-            <div className="links">
-                <a href="https://www.linkedin.com/in/sdeorym/?locale=fr-FR"><img src={linkedin} alt="Icône Linkedin"></img></a>
-                <a href="https://github.com/sdeorym"><img src={github} alt="Icône Github"></img></a>
-            </div>
         </div>
     </>
 )

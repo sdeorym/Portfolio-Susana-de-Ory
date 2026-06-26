@@ -1,9 +1,5 @@
-/*nav ul {
-
-}*/
-
-.closure {
-    padding: 12.5%;
+.closing {
+    padding: 1% 12.5%;
     font-size: 13.5px;
     text-align: center;
 }
@@ -11,9 +7,36 @@
     display:flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10%;
-    padding-top: 10px;
+    gap: 20px;
+    padding: 10px;
 }
-.links img {
+.linksImg {
     width: 25px;
+}
+.footerMenu button, .links button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--bg);
+    color: var(--blue-focus); 
+}
+.footerMenu ul {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    list-style: none;
+    gap: 5vw;
+    padding: 0;
+    margin: 5px;        
+}
+.footerMenu button {
+    min-height: 48px;
+    min-width: 48px;
+    padding: 12px;   
+}
+.footerMenu button a {
+    text-decoration: none;
+    /*font: var(--nunito);*/
+ 
 }

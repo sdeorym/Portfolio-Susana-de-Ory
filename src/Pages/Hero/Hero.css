@@ -1,9 +1,109 @@
-.heroPhoto {
+#hero {
+    position: relative;
+    scroll-margin-top: 0px;
     width: 100%;
-    display: block;
+    overflow: hidden;
+}
+.heroOverlay {
+    content: "";
     position: absolute;
+    inset: 0;
+    background: var(--brown-shadow);
+    z-index: 1;
+}
+.heroPhoto {
+    height: auto;
+    display: block;
+}
+.heroContent {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    z-index: 2;    
+}
+.tophead {
+    color: var(--w-text);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: 0.1rem;
+}
+.tophead h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.05;
+}
+.tophead h2 {
+    font-size: clamp(1.1rem, 3vw, 2.5rem);
+    line-height: 1.2;
+}
+.buttonGhost {
+    background: transparent;
+    border: none;
+    width: clamp(40px, 6vw, 56px);
+    height: clamp(40px, 6vw, 56px);
+}
+.heroIcon {
+    width: 70%;
+    height: 70%;
+}
+.headerMenu {
+    display:flex;
+    flex-direction:column;
+    position:fixed;
+    top:55px;
+    right:0;
+    width:52.5%;
+    background-color:var(--bluest-shadow);
+    z-index:9999;
+    align-items: flex-start;
+    padding-right: 5px;
+    color: var(--blue-focus);
+    gap: 4px;
+}
+.headerMenu button {
+    background: transparent;
+    border: none;
+    color: var(--blue-focus);
+    font-size: 1rem;
+}
+.headerMenu li:hover {
+    background-color: var(--blue-focus);   
+}
+.headerMenu button a:hover {
+    color: var(--w-text);
+    padding: 0 5px;
+}
+.headerMenu a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.headerMenu a:visited {
+    color: inherit;
 }
 
-h1, h2 {
-    z-index: 10;
+@media all and (min-width: 769px) {
+  .headerMenu button, .headerMenu a {
+    font-size: 1.1rem;
+  }
+  .headerMenu {
+    width:18%;
+
+  }
+}
+@media all and (min-width: 1025px) {
+  .headerMenu {
+    width:21%;
+
+  }  
+  .headerMenu button, .headerMenu a {
+    font-size: 1.2rem;
+  }
+}
+@media all and (min-width: 1241px) {
+    .headerMenu {
+        right: calc((100vw - 1241px)/2);}
 }
