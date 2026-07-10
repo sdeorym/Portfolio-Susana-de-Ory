@@ -11,6 +11,7 @@ import nina from "../../assets/images/projects/nina.avif"
 import eventsweb from "../../assets/images/projects/724events.avif"
 import argent from "../../assets/images/projects/argentBank.avif"
 import lpg from "../../assets/images/projects/lpg.avif"
+import charlotte from "../../assets/images/projects/charlotte.avif"
 import { useState } from "react";
 
 
@@ -187,6 +188,23 @@ function Projects() {
             "stack": "HTML + CSS + React",
             "web":"https://lpgconsulting.fr/",
             "alt": "Capture d'écran du site LPG Consulting"
+        },
+        {            
+            "id": "10",
+            "src": charlotte,
+            "title": "Cumplimiento normativo",
+            "brief": "Application de régulation des travaux",
+            "explanation": <section>
+                                <h5>Contexte</h5><p>Projet professionnel.</p>
+                                <h5>Description</h5><p>Développement d'une application pour vérifier si un travaux est fait selon les lois de bâtiment.</p>
+                                <h5>Objectifs :</h5><p>Développer un site en React : présentation des services, formulaire de contact, formulaire de connexion (encore à développer).</p>
+                                <h5>Compétences développées :</h5><p>React-Router, conception UX en collaboration avec le client, préparation du site pour y implémenter nouvelles fonctionnalités.</p>
+                                <h5>Résultats :</h5><p>Site modélé à l'attente des améliorations techniques.</p>
+                                <h5>Perspectives d'amélioration :</h5><p>Formulaires de contact et connexion actives, page client où envoyer la documentation pertinent en chaque cas.</p>
+                            </section>,
+            "stack": "HTML + CSS + React + React Router",
+            "web":"https://charlotte-gules.vercel.app/",
+            "alt": "Capture d'écran du site Cumplimiento normativo"
         }
     ]
 
