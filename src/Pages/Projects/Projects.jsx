@@ -12,6 +12,7 @@ import eventsweb from "../../assets/images/projects/724events.avif"
 import argent from "../../assets/images/projects/argentBank.avif"
 import lpg from "../../assets/images/projects/lpg.avif"
 import charlotte from "../../assets/images/projects/charlotte.avif"
+import pomodoro from "../../assets/images/projects/pomodoro.avif"
 import { useState } from "react";
 
 
@@ -205,6 +206,23 @@ function Projects() {
             "stack": "HTML + CSS + React + React Router",
             "web":"https://charlotte-gules.vercel.app/",
             "alt": "Capture d'écran du site Cumplimiento normativo"
+        },
+        {
+            "id": "11",
+            "src": pomodoro,
+            "title": "Pomodoro",
+            "brief": "Personnalisation du pomodoro selon les besoins de l'utilisateur",
+            "explanation": <section>
+                                <h5>Contexte</h5><p>Projet personnel.</p>
+                                <h5>Description</h5><p>Développement d'une application pour administrer le temps selon la technique pomodoro.</p>
+                                <h5>Objectifs :</h5><p>Développer un site en React avec TypeScript: changer les cycles, pauser le fonctionnement, le reinisialiser et afficher le progrès de chaque cycle.</p>
+                                <h5>Compétences développées :</h5><p>Concepcion UX, création et mis en jeu du fonctionnement du pomodoro.</p>
+                                <h5>Résultats :</h5><p>Site fonctionnel d'utilisation du temps.</p>
+                                <h5>Perspectives d'amélioration :</h5><p>Couleur des barres de progrès, version mobile.</p>
+                            </section>,
+            "stack": "React + TypeScript",
+            "web":"https://pomodoro-qmq7-git-main-sdeoryms-projects.vercel.app/",
+            "alt": "Capture d'écran du site Pomodoro"
         }
     ]
 
