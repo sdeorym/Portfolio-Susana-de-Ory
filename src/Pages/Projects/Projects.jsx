@@ -13,6 +13,7 @@ import argent from "../../assets/images/projects/argentBank.avif"
 import lpg from "../../assets/images/projects/lpg.avif"
 import charlotte from "../../assets/images/projects/charlotte.avif"
 import pomodoro from "../../assets/images/projects/pomodoro.avif"
+import iago from "../../assets/images/projects/IagoArean.avif"
 import { useState } from "react";
 
 
@@ -223,6 +224,23 @@ function Projects() {
             "stack": "React + TypeScript",
             "web":"https://pomodoro-qmq7-git-main-sdeoryms-projects.vercel.app/",
             "alt": "Capture d'écran du site Pomodoro"
+        },
+        {
+            "id": "12",
+            "src": iago,
+            "title": "Iago Arean",
+            "brief": "Portfolio de l'animateur Iago Arean",
+            "explanation": <section>
+                                <h5>Contexte</h5><p>Projet personnel.</p>
+                                <h5>Description</h5><p>Développement du portfolio d'un animateur et racconteur visuel.</p>
+                                <h5>Objectifs :</h5><p>Développer un site en React + React Router dynamique.</p>
+                                <h5>Compétences développées :</h5><p>Concepcion UX, création et mis en jeu du portfolio et accès aux données des projets.</p>
+                                <h5>Résultats :</h5><p>Portfolio fonctionnel.</p>
+                                <h5>Perspectives d'amélioration :</h5><p>Création de l'interface utilisateur pour mettre à jour les contenus du portfolio.</p>
+                            </section>,
+            "stack": "HTML + CSS + React + React Router",
+            "web":"https://iagoarean.com",
+            "alt": "Capture d'écran du site web de Iago Arean"
         }
     ]
 
